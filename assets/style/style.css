@@ -1,11 +1,15 @@
 body{
+    width: 1398px;
     background: #191b1d;
+    font-family: 'Inter', sans-serif;
+}
+a{
+    text-decoration: none;
 }
 .site-logo{
     position: relative;
     left: 90px;
     top: 70px;
-    animation-duration: 5s;
 }
 .site-logo-img{
     width: 70px;
@@ -41,3 +45,75 @@ body{
     0% {transform: rotate(0deg);position: relative;bottom: 10px;}
     100% {transform: rotate(45deg); ;position: relative;bottom: 10px;}
 }
+.header-button-back{
+    display: inline-block;
+    position: relative;
+    left: 1400px;
+    height: 50px;
+    width: 50px;
+    background-color:#2b2e31;
+    border-radius: 50px;
+    color: hsla(0,0%,100%,.4) ;
+}
+.header-button-back:hover{
+    width: 150px;
+    color: #fff;
+}
+.header-button{
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: -.05em;
+    margin-left: 25px;
+    margin-top: 15px;
+    width: 100px;
+}
+
+/*Home Style*/
+
+#home .container{
+    margin-left: 70px;
+}
+h1{
+    letter-spacing: -.06em;
+    color: #fff ;
+}
+.big-title{
+    line-height: 200px;
+}
+.big-title-hover{
+    line-height: 200px;
+    cursor: pointer;
+}
+.big-title-hover:hover{
+    visibility: hidden;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+.big-title-hover:hover > .h1-hidden{
+    visibility: initial;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+.h1-hidden{
+    visibility: hidden;
+    position: absolute;
+    left: 70px;
+}    
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
