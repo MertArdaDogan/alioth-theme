@@ -1,0 +1,43 @@
+body{
+    background: #191b1d;
+}
+.site-logo{
+    position: relative;
+    left: 90px;
+    top: 70px;
+    animation-duration: 5s;
+}
+.site-logo-img{
+    width: 70px;
+}
+.menu-toogle{
+    cursor: pointer;
+    position: relative;
+    top: 40px;
+    left: 300px;
+}
+.menu-toogle > .menu-line:first-child{
+    animation: line-first 1s;
+}
+.menu-toogle > .menu-line:nth-child(2){
+    animation: line-second 1s 1;
+}
+.menu-line{
+    height: 1px;
+    background-color: #fff;
+    display: block;
+    margin: 10px;
+    cursor: pointer;
+}
+.menu-line::after{
+    transform: rotate(100deg);
+}
+@keyframes line-first {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-45deg);}
+    0%{transform: rotate(0deg);}
+}
+@keyframes line-second {
+    0% {transform: rotate(0deg);position: relative;bottom: 10px;}
+    100% {transform: rotate(45deg); ;position: relative;bottom: 10px;}
+}
