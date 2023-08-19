@@ -83,15 +83,15 @@ h1{
 .big-title-hover{
     line-height: 200px;
     cursor: pointer;
-    transition: transform 1s;
 }
 .big-title-hover:hover{
-    transform:  translate3d(0, -100%, 0);
+    animation: fadeIn;
+    animation-duration: 3s;
     visibility: hidden;
 }
 .big-title-hover:hover > .h1-hidden{
     visibility: initial;
-}
+}   
 .h1-hidden{
     visibility: hidden;
     position: absolute;
@@ -101,30 +101,46 @@ h1{
     from {
       opacity: 0;
     }
-  
-    to {
-      opacity: 1;
-    }
-  }
+    to{
+        opacity: 1;
+  }}
+
   @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-  
-    to {
-      opacity: 0;
-    }
-  }
-@keyframes slideOutUp {
     0% {
-      transform: translate3d(0, 0, 0);
-      opacity: 1;
+        opacity: 1;
+      }
+  
+      25%{
+          opacity: .9;
+      }
+      50%{
+          opacity: .6;
+      }
+      75%{
+          opacity: .3;
+      }
+      100%{
+          opacity: 0;
+      }
     }
-    30% {
-      opacity: 0;
-    }
-    100%{
-        transform: translate3d(0, -100%, 0);
-        opacity: 0;
-    }
-  }
+
+  /* Video Style */
+
+.iframe{
+    width: 1300px;
+    height: 738px;
+    border: 0;
+    margin-top: 100px;
+    left: 397px;
+    position: relative;
+}
+.video-text{
+    position: relative;
+    top: 100px;
+    width: 1000px;
+    left: 490px;
+}
+.video-text h3{
+    color: #fff;
+    font-size: 30px;
+}
