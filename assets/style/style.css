@@ -163,6 +163,9 @@ h1{
     .big-title {
         line-height: 210px ;
     }
+    .big-title-hover{
+        line-height: 210px;
+    }
     .width-one {
         width: 1383px ;
     }
@@ -177,5 +180,37 @@ h1{
     }
     .width-five{
         width: 870px;
+    }
+}
+@media screen and (max-width : 1700px){
+    .big-title {
+        line-height: 180px ;
+    }
+    .big-title-hover{
+        line-height: 210px;
+    }
+}
+@media screen and (max-width : 1500px){
+    .big-title {
+        line-height: 165px ;
+    }
+    .big-title-hover{
+        line-height: 165px;
+    }
+}
+@media screen and (max-width : 1300px){
+    .big-title {
+        line-height: 150px ;
+    }
+    .big-title-hover{
+        line-height: 150px;
+    }
+}
+@media screen and (max-width : 1100px){
+    .big-title {
+        line-height: 130px ;
+    }
+    .big-title-hover{
+        line-height: 130px;
     }
 }
