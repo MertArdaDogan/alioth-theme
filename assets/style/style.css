@@ -1,5 +1,5 @@
 body{
-    width: 1398px;
+    max-width: 1398px;
     background: #191b1d;
     font-family: 'Inter', sans-serif;
 }
@@ -89,6 +89,21 @@ h1{
     animation-duration: 3s;
     visibility: hidden;
 }
+.width-one{
+    width: 1210px;
+}
+.width-two{
+    width: 1060px;
+}
+.width-there{
+    width: 900px;
+}
+.width-four{
+    width: 1170px;
+}
+.width-five{
+    width: 870px;
+}
 .big-title-hover:hover > .h1-hidden{
     visibility: initial;
 }   
@@ -143,4 +158,24 @@ h1{
 .video-text h3{
     color: #fff;
     font-size: 30px;
+}
+@media screen and (max-width : 2000px){
+    .big-title {
+        line-height: 210px ;
+    }
+    .width-one {
+        width: 1383px ;
+    }
+    .width-two{
+        width: 1209px ;
+    }
+    .width-there{
+        width: 1030px ;
+    }
+    .width-four{
+        width: 1343px ;
+    }
+    .width-five{
+        width: 870px;
+    }
 }
